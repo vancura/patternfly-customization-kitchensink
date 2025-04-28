@@ -91,6 +91,7 @@ import {
   ToggleGroupItem,
   Tooltip,
   TreeView,
+  TreeViewDataItem,
 } from '@patternfly/react-core';
 import { CogIcon, CubesIcon, InfoCircleIcon, PlusCircleIcon } from '@patternfly/react-icons';
 import pfLogo from '@app/bgimages/Patternfly-Logo.svg';
@@ -193,8 +194,10 @@ export const Kitchensink: React.FunctionComponent = () => {
     setCurrentPage(page);
   };
 
-  const handleTreeViewSelect = (evt: React.MouseEvent, treeItem: { id: string; name: string }) => {
-    setSelectedTreeItems([treeItem]);
+  const handleTreeViewSelect = (event: React.MouseEvent, item: TreeViewDataItem, _parentItem: TreeViewDataItem) => {
+    if (item.id) {
+      setSelectedTreeItems([{ id: item.id, name: String(item.name || '') }]);
+    }
   };
 
   const handleSearchInputChange = (event: React.FormEvent<HTMLInputElement>, value: string) => {
