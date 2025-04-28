@@ -1,0 +1,77 @@
+/* Custom PatternFly Styles for the styled version */
+.pf-custom-styles .pf-v6-c-button.pf-m-primary {
+  background-color: #6b4fbb;
+  --pf-v6-c-button--m-primary--BackgroundColor: #6b4fbb;
+  --pf-v6-c-button--m-primary--hover--BackgroundColor: #8c74d2;
+  --pf-v6-c-button--m-primary--focus--BackgroundColor: #8c74d2;
+  --pf-v6-c-button--m-primary--active--BackgroundColor: #533b9a;
+}
+
+.pf-custom-styles .pf-v6-c-switch__toggle:before {
+  background-color: #fff;
+}
+
+.pf-custom-styles .pf-v6-c-switch__input:checked ~ .pf-v6-c-switch__toggle {
+  background-color: #6b4fbb;
+}
+
+.pf-custom-styles .pf-v6-c-page__sidebar {
+  --pf-v6-c-page__sidebar--BackgroundColor: #f8f8f8;
+}
+
+.pf-custom-styles .pf-v6-c-nav {
+  --pf-v6-c-nav__link--hover--BackgroundColor: #ebe5ff;
+  --pf-v6-c-nav__link--active--BackgroundColor: #dfd4ff;
+  --pf-v6-c-nav__link--active--BorderLeftColor: #6b4fbb;
+}
+
+.pf-custom-styles .pf-v6-c-nav__link.pf-m-current {
+  --pf-v6-c-nav__link--m-current--BackgroundColor: #dfd4ff;
+  --pf-v6-c-nav__link--m-current--BorderLeftColor: #6b4fbb;
+}
+
+.pf-custom-styles .pf-v6-c-card {
+  border-radius: 8px;
+  --pf-v6-c-card--BoxShadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pf-custom-styles .pf-v6-c-masthead {
+  --pf-v6-c-masthead--BackgroundColor: #27184f;
+  --pf-v6-c-masthead--Color: #fff;
+}
+
+.pf-custom-styles .theme-switcher {
+  color: #fff;
+}
+
+/* Custom typography */
+.pf-custom-styles {
+  --pf-t--global--FontSize--md: 16px;
+  --pf-t--global--FontFamily--sans-serif: 'Roboto', sans-serif;
+}
+
+/* Custom form styles */
+.pf-custom-styles .pf-v6-c-form-control {
+  --pf-v6-c-form-control--BorderRadius: 4px;
+  --pf-v6-c-form-control--BorderColor: #ccc;
+  --pf-v6-c-form-control--focus--BorderColor: #6b4fbb;
+}
+
+/* Custom table styles */
+.pf-custom-styles .pf-v6-c-table {
+  --pf-v6-c-table--BorderColor: #e5e5e5;
+  --pf-v6-c-table--thead--Color: #27184f;
+}
+
+/* Custom alert styles */
+.pf-custom-styles .pf-v6-c-alert.pf-m-info {
+  --pf-v6-c-alert--m-info--BorderColor: #6b4fbb;
+  --pf-v6-c-alert--m-info--BackgroundColor: #ebe5ff;
+}
+
+/* Custom tooltip styles */
+.pf-custom-styles .pf-v6-c-tooltip {
+  --pf-v6-c-tooltip--BackgroundColor: #27184f;
+}
+
+/* Add more custom styles as needed */
