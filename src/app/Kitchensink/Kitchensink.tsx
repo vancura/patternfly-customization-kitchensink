@@ -93,7 +93,6 @@ import {
   TreeView,
 } from '@patternfly/react-core';
 import { CogIcon, CubesIcon, InfoCircleIcon, PlusCircleIcon } from '@patternfly/react-icons';
-import './Kitchensink.css';
 import pfLogo from '@app/bgimages/Patternfly-Logo.svg';
 
 export const Kitchensink: React.FunctionComponent = () => {
@@ -332,7 +331,6 @@ function Example() {
           <Button variant="secondary" onClick={() => handleStepClick(currentStepIndex > 1 ? currentStepIndex - 1 : 1)}>
             Previous
           </Button>{' '}
-
           <Button variant="primary" onClick={() => handleStepClick(currentStepIndex < 3 ? currentStepIndex + 1 : 3)}>
             Next
           </Button>
@@ -735,7 +733,6 @@ function Example() {
 
             <ListItem>
               Second item with subitems
-
               <List>
                 <ListItem>Subitem 1</ListItem>
                 <ListItem>Subitem 2</ListItem>
