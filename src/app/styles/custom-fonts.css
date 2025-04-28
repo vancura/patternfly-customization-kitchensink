@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+.pf-custom-styles {
+  --pf-v6-global--FontFamily--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-v6-global--FontFamily--heading--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-v6-t--global--FontFamily--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-v6-t--global--FontFamily--heading--sans-serif: 'IBM Plex Sans', sans-serif !important;
+
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+.pf-custom-styles .pf-v6-c-title,
+.pf-custom-styles .pf-v6-c-button,
+.pf-custom-styles .pf-v6-c-form__label,
+.pf-custom-styles .pf-v6-c-nav__link,
+.pf-custom-styles h1,
+.pf-custom-styles h2,
+.pf-custom-styles h3,
+.pf-custom-styles h4,
+.pf-custom-styles h5,
+.pf-custom-styles h6,
+.pf-custom-styles p,
+.pf-custom-styles li,
+.pf-custom-styles a {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}

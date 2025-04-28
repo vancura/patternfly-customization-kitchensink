@@ -1,15 +1,10 @@
 import * as React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import {
-  Button,
   Flex,
   FlexItem,
   Masthead,
-  MastheadBrand,
-  MastheadContent,
-  MastheadLogo,
   MastheadMain,
-  MastheadToggle,
   Nav,
   NavExpandable,
   NavItem,
@@ -21,22 +16,22 @@ import {
   Switch,
 } from '@patternfly/react-core';
 import { IAppRoute, IAppRouteGroup, routes } from '@app/routes';
-import { BarsIcon } from '@patternfly/react-icons';
 
 interface IAppLayout {
   children: React.ReactNode;
 }
 
 const AppLayout: React.FunctionComponent<IAppLayout> = ({ children }) => {
-  const [sidebarOpen, setSidebarOpen] = React.useState(true);
+  const [sidebarOpen] = React.useState(true);
   const [isStyled, setIsStyled] = React.useState(true);
 
   React.useEffect(() => {
-    // Apply or remove the custom styling class on the body element
     if (isStyled) {
       document.body.classList.add('pf-custom-styles');
+      document.documentElement.classList.add('pf-custom-styles');
     } else {
       document.body.classList.remove('pf-custom-styles');
+      document.documentElement.classList.remove('pf-custom-styles');
     }
   }, [isStyled]);
 
