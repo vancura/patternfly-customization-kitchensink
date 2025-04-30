@@ -214,7 +214,7 @@ export const Kitchensink: React.FunctionComponent = () => {
     setCurrentPage(page);
   };
 
-  const handleTreeViewSelect = (event: React.MouseEvent, item: TreeViewDataItem, _parentItem: TreeViewDataItem) => {
+  const handleTreeViewSelect = (event: React.MouseEvent, item: TreeViewDataItem) => {
     if (item.id) {
       setSelectedTreeItems([{ id: item.id, name: String(item.name || '') }]);
     }

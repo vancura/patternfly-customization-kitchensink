@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Kitchensink } from '@app/Kitchensink/Kitchensink';
-import { Support } from '@app/Support/Support';
+import { About } from '@app/About/About';
 import { NotFound } from '@app/NotFound/NotFound';
 
 export interface IAppRoute {
@@ -31,11 +31,11 @@ const routes: AppRouteConfig[] = [
     title: 'PatternFly Kitchensink',
   },
   {
-    element: <Support />,
+    element: <About />,
     exact: true,
-    label: 'Support',
-    path: '/support',
-    title: 'PatternFly Kitchensink | Support Page',
+    label: 'About',
+    path: '/about',
+    title: 'PatternFly Kitchensink | About',
   },
 ];
 
