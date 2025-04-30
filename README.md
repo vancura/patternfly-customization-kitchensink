@@ -48,10 +48,10 @@ npm run start
 
 ## Configurations
 
-* [TypeScript Config](./tsconfig.json)
-* [Webpack Config](./webpack.common.js)
-* [Editor Config](./.editorconfig)
-* [Vercel Config](./vercel.json)
+- [TypeScript Config](./tsconfig.json)
+- [Webpack Config](./webpack.common.js)
+- [Editor Config](./.editorconfig)
+- [Vercel Config](./vercel.json)
 
 ## Project Structure
 
@@ -60,10 +60,10 @@ The project follows a modular organization:
 ```
 src/
 ├── app/                    # Main application code
+│   ├── About/              # About page with project information
 │   ├── AppLayout/          # Main application layout components
 │   ├── Kitchensink/        # Main showcase component for all PatternFly elements
 │   ├── NotFound/           # 404 page component
-│   ├── Support/            # Support page component
 │   ├── bgimages/           # Background images and assets
 │   ├── contexts/           # React context providers
 │   ├── styles/             # CSS styles
@@ -77,12 +77,28 @@ src/
 │   │   │   ├── navigation.css    # Navigation component styling
 │   │   │   ├── progress.css      # Progress indicators styling
 │   │   │   └── variables.css     # CSS custom properties (variables)
-│   │   └── custom-styles.css     # Main CSS entry point
+│   │   ├── custom-styles.css     # Main CSS entry point
+│   │   └── custom-fonts.css      # Font configuration
+│   ├── utils/              # Utility functions and helpers
 │   ├── app.css             # Global application styles
 │   ├── index.tsx           # Application entry
 │   └── routes.tsx          # Route definitions
 └── index.tsx               # Main entry point
 ```
+
+## Application Pages
+
+### Kitchensink
+
+The main showcase page that demonstrates all PatternFly components with custom styling. This page serves as a visual reference for how components can be customized and used together.
+
+### About
+
+The About page provides information about the project, its purpose, and guides for customizing PatternFly. It includes details about:
+
+- Project features and technology stack
+- Customization approaches and strategies
+- Resources and documentation links
 
 ### 404 Page
 
@@ -100,9 +116,9 @@ Example (from our `variables.css`):
 
 ```css
 :root {
-  --pf-v6-global--primary-color--100: #1E88E5; /* Primary blue */
-  --pf-v6-global--primary-color--200: #1565C0; /* Darker blue for hover states */
-  --pf-v6-global--primary-color--light-100: #E3F2FD; /* Light blue for backgrounds */
+  --pf-v6-global--primary-color--100: #1e88e5; /* Primary blue */
+  --pf-v6-global--primary-color--200: #1565c0; /* Darker blue for hover states */
+  --pf-v6-global--primary-color--light-100: #e3f2fd; /* Light blue for backgrounds */
 }
 ```
 
@@ -186,7 +202,7 @@ import styled from 'styled-components';
 import { Button } from '@patternfly/react-core';
 
 const CustomButton = styled(Button)`
-  background: linear-gradient(45deg, #1E88E5, #9966ff);
+  background: linear-gradient(45deg, #1e88e5, #9966ff);
   border-radius: 25px;
 `;
 ```
@@ -210,7 +226,7 @@ This project organizes styles in a modular way to make customizations maintainab
 #### Main Files
 
 - `custom-styles.css`: Main entry point that imports all component-specific styles
-- `custom-fonts.css`: Typography and font-related styles (optional)
+- `custom-fonts.css`: Typography and font-related styles
 
 #### Component-Specific Files
 
