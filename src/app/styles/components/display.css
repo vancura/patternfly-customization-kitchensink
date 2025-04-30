@@ -53,11 +53,6 @@
   font-family: 'IBM Plex Mono', monospace;
 }
 
-/* Custom avatar styling - for user profiles */
-.pf-custom-styles .pf-v6-c-avatar {
-  border: 1px solid var(--pf-v6-global--Color--100);
-}
-
 /* Custom empty state styling - for no data conditions */
 .pf-custom-styles .pf-v6-c-empty-state {
   padding: 40px;

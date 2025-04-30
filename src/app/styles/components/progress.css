@@ -10,10 +10,15 @@
 .pf-custom-styles .pf-v6-c-progress__bar {
   border-radius: var(--pf-v6-global--BorderRadius--sm);
   height: 8px;
+  border: 1px var(--pf-v6-global--Color--100) solid;
+  background-color: var(--pf-v6-global--BackgroundColor--100);
 }
 
 .pf-custom-styles .pf-v6-c-progress__indicator {
   background-color: var(--pf-v6-global--primary-color--100);
+  height: 4px;
+  margin: 1px;
+  border-radius: 2px 0 0 2px;
 }
 
 .pf-custom-styles .pf-v6-c-progress__status {
@@ -22,13 +27,13 @@
 
 /* Custom spinner styling - for loading states */
 .pf-custom-styles .pf-v6-c-spinner {
-  --pf-v6-c-spinner--Color: var(--pf-v6-global--primary-color--100);
+  --pf-v6-c-spinner--Color: var(--pf-v6-global--Color--100);
 }
 
 /* Progress steps customization - for multi-step processes */
 .pf-custom-styles .pf-v6-c-progress-stepper {
   --pf-v6-c-progress-stepper__step-icon--BackgroundColor: var(--pf-v6-global--primary-color--100);
-  --pf-v6-c-progress-stepper__step-icon--BorderColor: var(--pf-v6-global--primary-color--100);
+  --pf-v6-c-progress-stepper__step-icon--BorderColor: var(--pf-v6-global--BackgroundColor--100);
 }
 
 .pf-custom-styles .pf-v6-c-progress-stepper__step--m-current .pf-v6-c-progress-stepper__step-icon {

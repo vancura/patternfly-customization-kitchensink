@@ -10,8 +10,9 @@
   border-radius: 0;
   border: none;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 /* Hover effect for interactive cards */
@@ -24,6 +25,10 @@
 .pf-custom-styles .pf-v6-c-card__title {
   color: var(--pf-v6-global--Color--100);
   font-weight: 600;
+}
+
+.pf-v6-c-card__title-text {
+  font-family: var(--pf-global--FontFamily--heading--sans-serif);
 }
 
 /* Card body content styling */

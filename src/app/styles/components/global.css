@@ -9,13 +9,14 @@
 /* Global fixes that apply to both default and styled versions */
 
 /* Make sure scrollbars appear when needed */
-html.pf-custom-styles, body.pf-custom-styles {
+html.pf-custom-styles,
+body.pf-custom-styles {
   overflow-y: auto !important;
   height: 100%;
 }
 
 /* Hide orphaned menus that might appear due to state management issues */
-.pf-v6-c-menu[style*="position: absolute"][style*="z-index: 9999"]:not(:focus-within):not(:hover) {
+.pf-v6-c-menu[style*='position: absolute'][style*='z-index: 9999']:not(:focus-within):not(:hover) {
   display: none !important;
 }
 
