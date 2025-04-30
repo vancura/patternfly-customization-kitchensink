@@ -1,3 +1,11 @@
+/**
+ * Alert and Notification Component Customizations
+ *
+ * This file contains styling for components that provide feedback, notifications,
+ * and information to users. It includes alerts, hints, tooltips, and popovers that
+ * help communicate status, context, and guidance throughout the application.
+ */
+
 /* Custom alert styling - for feedback and notifications */
 .pf-custom-styles .pf-v6-c-alert {
   border-width: 2px;

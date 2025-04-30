@@ -1,3 +1,12 @@
+/**
+ * Navigation Component Customizations
+ *
+ * This file contains styling for components that facilitate navigation and
+ * information architecture within the application. It includes tabs, menus,
+ * navigation bars, breadcrumbs, pagination, and other UI elements that help
+ * users move through the application.
+ */
+
 /* Custom tabs styling - for content switching */
 .pf-custom-styles .pf-v6-c-tabs__item {
   margin-right: 24px;

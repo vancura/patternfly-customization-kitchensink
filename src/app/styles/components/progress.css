@@ -1,3 +1,11 @@
+/**
+ * Progress Component Customizations
+ *
+ * This file contains styling for components that indicate progress, loading states,
+ * and process steps. It includes progress bars, spinners, progress steppers,
+ * and skeleton screens that provide visual feedback about operation status.
+ */
+
 /* Custom progress bar styling - for completion indicators */
 .pf-custom-styles .pf-v6-c-progress__bar {
   border-radius: var(--pf-v6-global--BorderRadius--sm);

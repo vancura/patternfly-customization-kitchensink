@@ -1,3 +1,11 @@
+/**
+ * Display Component Customizations
+ *
+ * This file contains styling for components related to data display and visualization.
+ * It includes customizations for badges, labels, tables, description lists, code blocks,
+ * avatars, empty states, and other visual elements that display information.
+ */
+
 /* Custom badge styling - used for counters and status indicators */
 .pf-custom-styles .pf-v6-c-badge {
   border-radius: 12px;

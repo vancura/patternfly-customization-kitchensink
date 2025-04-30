@@ -1,3 +1,11 @@
+/**
+ * Form Component Customizations
+ *
+ * This file contains styling for interactive form components used throughout
+ * the application. It includes inputs, controls, selectors, and other UI elements
+ * that enable user input and interaction with the application.
+ */
+
 /* Base form control styling - for text inputs, textareas, and selects */
 .pf-custom-styles .pf-v6-c-form-control {
   border-radius: var(--pf-v6-global--BorderRadius--sm);

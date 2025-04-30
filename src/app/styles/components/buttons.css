@@ -1,3 +1,10 @@
+/**
+ * Button Component Customizations
+ *
+ * This file contains custom styling for PatternFly button components.
+ * It overrides the default PatternFly button styles to match our design system.
+ */
+
 /* Primary button styling - main call to action */
 .pf-custom-styles .pf-v6-c-button.pf-m-primary {
   background-color: var(--pf-v6-global--primary-color--100);

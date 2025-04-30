@@ -1,3 +1,14 @@
+/**
+ * PatternFly Custom Variables
+ *
+ * This file defines all custom CSS variables (custom properties) used to
+ * customize the PatternFly design system. These variables override the
+ * default PatternFly theme and provide a consistent design language.
+ *
+ * Note: We're using the v6 namespace (--pf-v6-*) to ensure compatibility
+ * with PatternFly 6.x
+ */
+
 /* Color variables for the theme */
 :root {
   /* Primary colors */

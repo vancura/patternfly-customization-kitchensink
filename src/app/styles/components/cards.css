@@ -1,3 +1,10 @@
+/**
+ * Card Component Customizations
+ *
+ * This file contains custom styling for PatternFly card and panel components.
+ * Cards receive elevated shadows and hover effects to create a modern UI experience.
+ */
+
 /* Base card styling with shadow and animation effects */
 .pf-custom-styles .pf-v6-c-card {
   border-radius: 0;

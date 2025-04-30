@@ -96,13 +96,27 @@ import {
 import { CogIcon, CubesIcon, InfoCircleIcon, PlusCircleIcon } from '@patternfly/react-icons';
 import pfLogo from '@app/bgimages/Patternfly-Logo.svg';
 
+/**
+ * Kitchensink Component
+ *
+ * A comprehensive showcase of PatternFly components and their various states and properties.
+ * This component demonstrates how PatternFly components can be used and customized,
+ * serving as both documentation and a testing ground for styling modifications.
+ */
 export const Kitchensink: React.FunctionComponent = () => {
+  // State for expandable section
   const [isExpandableSectionExpanded, setIsExpandableSectionExpanded] = useState(false);
   const [isDrawerExpanded, setIsDrawerExpanded] = useState(false);
   const [isPopoverVisible, setIsPopoverVisible] = useState(false);
+
+  // Tab state
   const [activeTabKey, setActiveTabKey] = useState<string | number>(0);
+
+  // Alert visibility states
   const [alertOneVisible, setAlertOneVisible] = useState(true);
   const [alertTwoVisible, setAlertTwoVisible] = useState(true);
+
+  // Form component states
   const [inputValue, setInputValue] = useState('PatternFly');
   const [textareaValue, setTextareaValue] = useState('This is a textarea.');
   const [checkboxChecked, setCheckboxChecked] = useState(true);
@@ -110,13 +124,18 @@ export const Kitchensink: React.FunctionComponent = () => {
   const [switchChecked, setSwitchChecked] = useState(true);
   const [numberValue, setNumberValue] = useState(5);
   const [sliderValue, setSliderValue] = useState(50);
+
+  // Progress and navigation states
   const [currentStepIndex, setCurrentStepIndex] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [sidebarExpanded, setSidebarExpanded] = useState(true);
+
+  // Search and selection states
   const [searchInputValue, setSearchInputValue] = useState('');
   const [selectedTreeItems, setSelectedTreeItems] = useState<{ id: string; name: string }[]>([]);
   const [selectedToggleItem, setSelectedToggleItem] = useState('item-1');
 
+  // Sample tree data for TreeView component
   const treeItems = [
     {
       name: 'Application launcher',
@@ -146,6 +165,7 @@ export const Kitchensink: React.FunctionComponent = () => {
     { name: 'Technical support', id: 'support' },
   ];
 
+  // Event handlers
   const handleExpandableSectionToggle = (_event: React.MouseEvent, isExpanded: boolean) => {
     setIsExpandableSectionExpanded(isExpanded);
   };
@@ -204,6 +224,7 @@ export const Kitchensink: React.FunctionComponent = () => {
     setSearchInputValue(value);
   };
 
+  // Sample code block for demonstration
   const codeBlockContent = `import { Button } from '@patternfly/react-core';
 function Example() {
   return <Button variant="primary">Click me</Button>;
@@ -233,6 +254,7 @@ function Example() {
 
       <Divider />
 
+      {/* Branding and Identity Components Section */}
       <PageSection>
         <Title headingLevel="h2">Branding & Identity Components</Title>
 
@@ -257,6 +279,7 @@ function Example() {
 
       <Divider />
 
+      {/* Card Components Section */}
       <PageSection>
         <Title headingLevel="h2">Card Components</Title>
 
@@ -285,6 +308,7 @@ function Example() {
 
       <Divider />
 
+      {/* State and Progress Components Section */}
       <PageSection>
         <Title headingLevel="h2">State & Progress Components</Title>
 
@@ -342,6 +366,7 @@ function Example() {
 
       <Divider />
 
+      {/* Alert Components Section */}
       <PageSection>
         <Title headingLevel="h2">Alert Components</Title>
 
@@ -386,6 +411,7 @@ function Example() {
 
       <Divider />
 
+      {/* Form Components Section */}
       <PageSection>
         <Title headingLevel="h2">Form Components</Title>
 
@@ -558,6 +584,7 @@ function Example() {
 
       <Divider />
 
+      {/* Layout & Navigation Components Section */}
       <PageSection>
         <Title headingLevel="h2">Layout & Navigation Components</Title>
 
@@ -629,6 +656,7 @@ function Example() {
           </Drawer>
         </div>
 
+        {/* Sidebar Navigation Example */}
         <div style={{ marginBottom: '20px' }}>
           <Sidebar orientation="split">
             <SidebarPanel style={{ width: sidebarExpanded ? '250px' : '50px' }}>
@@ -658,6 +686,7 @@ function Example() {
           </Sidebar>
         </div>
 
+        {/* Jump Links Navigation */}
         <div style={{ marginBottom: '20px' }}>
           <JumpLinks isCentered>
             <JumpLinksList>
@@ -676,6 +705,7 @@ function Example() {
           </JumpLinks>
         </div>
 
+        {/* Pagination Component */}
         <div style={{ marginBottom: '20px' }}>
           <Pagination
             itemCount={100}
@@ -687,6 +717,7 @@ function Example() {
           />
         </div>
 
+        {/* TreeView Component for Hierarchical Navigation */}
         <div style={{ marginBottom: '20px' }}>
           <TreeView
             data={treeItems}
@@ -700,6 +731,7 @@ function Example() {
 
       <Divider />
 
+      {/* Text & Data Display Components Section */}
       <PageSection>
         <Title headingLevel="h2">Text & Data Display Components</Title>
 
@@ -765,6 +797,7 @@ function Example() {
 
       <Divider />
 
+      {/* Action Components Section */}
       <PageSection>
         <Title headingLevel="h2">Action Components</Title>
 
@@ -824,6 +857,7 @@ function Example() {
           />
         </div>
 
+        {/* Backdrop demonstration */}
         <div style={{ marginBottom: '20px' }}>
           <Button
             variant="link"
@@ -843,6 +877,7 @@ function Example() {
 
       <Divider />
 
+      {/* Loading & Skeleton Components Section */}
       <PageSection>
         <Title headingLevel="h2">Loading & Skeleton Components</Title>
 

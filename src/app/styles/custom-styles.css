@@ -1,3 +1,12 @@
+/**
+ * PatternFly Custom Styles
+ *
+ * This file serves as the entry point for all custom PatternFly styling.
+ * It imports all component-specific CSS files to enable modular customization.
+ *
+ * To use these styles, add the "pf-custom-styles" class to a container element
+ * that wraps your PatternFly components.
+ */
 
 @import './components/variables.css';
 @import './components/global.css';
