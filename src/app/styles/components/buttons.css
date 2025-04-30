@@ -1,0 +1,38 @@
+/* Primary button styling - main call to action */
+.pf-custom-styles .pf-v6-c-button.pf-m-primary {
+  background-color: var(--pf-v6-global--primary-color--100);
+  border-radius: 6px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  --pf-v6-c-button--m-primary--BackgroundColor: var(--pf-v6-global--primary-color--100);
+  --pf-v6-c-button--m-primary--hover--BackgroundColor: var(--pf-v6-global--primary-color--200);
+  --pf-v6-c-button--m-primary--focus--BackgroundColor: var(--pf-v6-global--primary-color--200);
+  --pf-v6-c-button--m-primary--active--BackgroundColor: var(--pf-v6-global--primary-color--200);
+  font-weight: 500;
+}
+
+/* Secondary button styling - alternative action */
+.pf-custom-styles .pf-v6-c-button.pf-m-secondary {
+  border-radius: 6px;
+  border-color: var(--pf-v6-global--primary-color--100);
+  color: var(--pf-v6-global--primary-color--100);
+  transition: all 0.2s ease-in-out;
+}
+
+.pf-custom-styles .pf-v6-c-button.pf-m-secondary:hover {
+  background-color: var(--pf-v6-global--primary-color--light-100);
+}
+
+/* Link button styling - text-only action */
+.pf-custom-styles .pf-v6-c-button.pf-m-link {
+  color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Accent-colored buttons (purple variant) */
+.pf-custom-styles .pf-v6-c-button.pf-m-primary.pf-m-accent {
+  background-color: var(--pf-v6-global--accent-color--200);
+  --pf-v6-c-button--m-primary--BackgroundColor: var(--pf-v6-global--accent-color--200);
+  --pf-v6-c-button--m-primary--hover--BackgroundColor: var(--pf-v6-global--accent-color--300);
+  --pf-v6-c-button--m-primary--focus--BackgroundColor: var(--pf-v6-global--accent-color--300);
+  --pf-v6-c-button--m-primary--active--BackgroundColor: var(--pf-v6-global--accent-color--100);
+}

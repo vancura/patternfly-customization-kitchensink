@@ -1,0 +1,34 @@
+/* Custom progress bar styling - for completion indicators */
+.pf-custom-styles .pf-v6-c-progress__bar {
+  border-radius: var(--pf-v6-global--BorderRadius--sm);
+  height: 8px;
+}
+
+.pf-custom-styles .pf-v6-c-progress__indicator {
+  background-color: var(--pf-v6-global--primary-color--100);
+}
+
+.pf-custom-styles .pf-v6-c-progress__status {
+  font-weight: 500;
+}
+
+/* Custom spinner styling - for loading states */
+.pf-custom-styles .pf-v6-c-spinner {
+  --pf-v6-c-spinner--Color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Progress steps customization - for multi-step processes */
+.pf-custom-styles .pf-v6-c-progress-stepper {
+  --pf-v6-c-progress-stepper__step-icon--BackgroundColor: var(--pf-v6-global--primary-color--100);
+  --pf-v6-c-progress-stepper__step-icon--BorderColor: var(--pf-v6-global--primary-color--100);
+}
+
+.pf-custom-styles .pf-v6-c-progress-stepper__step--m-current .pf-v6-c-progress-stepper__step-icon {
+  background-color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Custom skeleton styling - for content loading placeholders */
+.pf-custom-styles .pf-v6-c-skeleton {
+  --pf-v6-c-skeleton--BackgroundColor: var(--pf-v6-global--BorderColor--300);
+  border-radius: var(--pf-v6-global--BorderRadius--sm);
+}

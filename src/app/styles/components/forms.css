@@ -1,0 +1,75 @@
+/* Base form control styling - for text inputs, textareas, and selects */
+.pf-custom-styles .pf-v6-c-form-control {
+  border-radius: var(--pf-v6-global--BorderRadius--sm);
+  border-color: var(--pf-v6-global--BorderColor--100);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  --pf-v6-c-form-control--BorderColor: var(--pf-v6-global--BorderColor--100);
+  --pf-v6-c-form-control--focus--BorderColor: var(--pf-v6-global--primary-color--100);
+}
+
+/* Focus state for form controls */
+.pf-custom-styles .pf-v6-c-form-control:focus {
+  border-color: var(--pf-v6-global--primary-color--100);
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+/* Hover state for form controls */
+.pf-custom-styles .pf-v6-c-form-control:hover {
+  border-color: var(--pf-v6-global--Color--500);
+}
+
+/* Form label styling - for field identification */
+.pf-custom-styles .pf-v6-c-form__label {
+  font-weight: 500;
+  color: var(--pf-v6-global--Color--200);
+}
+
+/* Helper text styling - for validation and guidance */
+.pf-custom-styles .pf-v6-c-form__helper-text {
+  color: var(--pf-v6-global--Color--400);
+}
+
+/* Custom switch styling - for toggle controls */
+.pf-custom-styles .pf-v6-c-switch__toggle {
+  background-color: var(--pf-v6-global--BorderColor--100);
+  border: 1px var(--pf-v6-global--BackgroundColor--100) solid;
+}
+
+.pf-custom-styles .pf-v6-c-switch__toggle:before {
+  background-color: var(--pf-v6-global--BackgroundColor--100);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: 16px;
+  width: 16px;
+  top: 9.5px;
+  margin-left: -18px;
+}
+
+/* Switch checked state */
+.pf-custom-styles .pf-v6-c-switch__input:checked ~ .pf-v6-c-switch__toggle {
+  background-color: var(--pf-v6-global--primary-color--100);
+}
+
+.pf-custom-styles .pf-v6-c-switch__input:checked ~ .pf-v6-c-switch__toggle:before {
+  left: calc(100% - 18px);
+}
+
+/* Custom input group styling - for combined inputs */
+.pf-custom-styles .pf-v6-c-input-group {
+  border-radius: var(--pf-v6-global--BorderRadius--sm);
+  overflow: hidden;
+}
+
+/* Custom clipboard copy styling - for copyable content */
+.pf-custom-styles .pf-v6-c-clipboard-copy {
+  border-radius: var(--pf-v6-global--BorderRadius--sm);
+  border-color: var(--pf-v6-global--BorderColor--100);
+}
+
+/* Custom toggle group styling - for segmented controls */
+.pf-custom-styles .pf-v6-c-toggle-group__item.pf-m-selected {
+  background-color: var(--pf-v6-global--primary-color--light-100);
+}
+
+.pf-custom-styles .pf-v6-c-toggle-group__button {
+  border-radius: var(--pf-v6-global--BorderRadius--sm);
+}

@@ -1,0 +1,64 @@
+/* Custom alert styling - for feedback and notifications */
+.pf-custom-styles .pf-v6-c-alert {
+  border-width: 2px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Information alerts */
+.pf-custom-styles .pf-v6-c-alert.pf-m-info {
+  --pf-v6-c-alert--m-info--BorderColor: var(--pf-v6-global--info-color--100);
+  --pf-v6-c-alert--m-info--BackgroundColor: var(--pf-v6-global--primary-color--light-100);
+}
+
+/* Success alerts */
+.pf-custom-styles .pf-v6-c-alert.pf-m-success {
+  --pf-v6-c-alert--m-success--BorderColor: var(--pf-v6-global--success-color--100);
+  --pf-v6-c-alert--m-success--BackgroundColor: var(--pf-v6-global--success-color--light-100);
+}
+
+/* Warning alerts */
+.pf-custom-styles .pf-v6-c-alert.pf-m-warning {
+  --pf-v6-c-alert--m-warning--BorderColor: var(--pf-v6-global--warning-color--100);
+  --pf-v6-c-alert--m-warning--BackgroundColor: var(--pf-v6-global--warning-color--light-100);
+}
+
+/* Danger/error alerts */
+.pf-custom-styles .pf-v6-c-alert.pf-m-danger {
+  --pf-v6-c-alert--m-danger--BorderColor: var(--pf-v6-global--danger-color--100);
+  --pf-v6-c-alert--m-danger--BackgroundColor: var(--pf-v6-global--danger-color--light-100);
+}
+
+/* Custom hint styling - for guidance and tips */
+.pf-custom-styles .pf-v6-c-hint {
+  background-color: var(--pf-v6-global--BackgroundColor--100);
+  border-radius: 0;
+}
+
+.pf-custom-styles .pf-v6-c-hint__title {
+  color: var(--pf-v6-global--primary-color--100);
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+}
+
+.pf-custom-styles .pf-v6-c-hint__body {
+  color: var(--pf-v6-global--Color--300);
+}
+
+/* Custom tooltip styling - for contextual information */
+.pf-custom-styles .pf-v6-c-tooltip {
+  --pf-v6-c-tooltip--BackgroundColor: var(--pf-v6-global--Color--100);
+  border-radius: var(--pf-v6-global--BorderRadius--sm);
+  font-weight: 400;
+}
+
+/* Custom popover styling - for additional details */
+.pf-custom-styles .pf-v6-c-popover {
+  --pf-v6-c-popover--BoxShadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: var(--pf-v6-global--BorderRadius--md);
+}
+
+.pf-custom-styles .pf-v6-c-popover__title {
+  font-weight: 600;
+}

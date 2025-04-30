@@ -1,0 +1,59 @@
+/* Color variables for the theme */
+:root {
+  /* Primary colors */
+  --pf-v6-global--primary-color--100: #1E88E5; /* Primary blue */
+  --pf-v6-global--primary-color--200: #1565C0; /* Darker blue for hover states */
+  --pf-v6-global--primary-color--light-100: #E3F2FD; /* Light blue for backgrounds */
+
+  /* Text colors */
+  --pf-v6-global--Color--100: #212121; /* Dark text */
+  --pf-v6-global--Color--200: #424242; /* Medium dark text */
+  --pf-v6-global--Color--300: #616161; /* Medium text */
+  --pf-v6-global--Color--400: #757575; /* Helper text */
+  --pf-v6-global--Color--500: #9E9E9E; /* Subtle text */
+
+  /* Success/info/warning/danger colors */
+  --pf-v6-global--success-color--100: #43A047;
+  --pf-v6-global--success-color--light-100: #E8F5E9;
+  --pf-v6-global--info-color--100: #2196F3;
+  --pf-v6-global--info-color--light-100: #E3F2FD;
+  --pf-v6-global--warning-color--100: #FF9800;
+  --pf-v6-global--warning-color--light-100: #FFF3E0;
+  --pf-v6-global--danger-color--100: #E53935;
+  --pf-v6-global--danger-color--light-100: #FFEBEE;
+
+  /* Background colors */
+  --pf-v6-global--BackgroundColor--100: #FFFFFF; /* White background */
+  --pf-v6-global--BackgroundColor--200: #F8F8F8; /* Light gray background */
+  --pf-v6-global--BackgroundColor--300: #EEEEEE; /* Medium light gray */
+
+  /* Border colors */
+  --pf-v6-global--BorderColor--100: #BDBDBD; /* Standard border */
+  --pf-v6-global--BorderColor--200: #E5E5E5; /* Light border */
+  --pf-v6-global--BorderColor--300: #EEEEEE; /* Very light border */
+
+  /* Dark theme or accent colors */
+  --pf-v6-global--accent-color--100: #27184f; /* Dark purple */
+  --pf-v6-global--accent-color--200: #6b4fbb; /* Medium purple */
+  --pf-v6-global--accent-color--300: #8c74d2; /* Light purple */
+  --pf-v6-global--accent-color--400: #dfd4ff; /* Very light purple */
+
+  /* Code colors */
+  --pf-v6-global--code-block--BackgroundColor: #263238;
+  --pf-v6-global--code-block--TextColor: #ECEFF1;
+
+  /* Typography */
+  --pf-v6-global--FontSize--md: 16px;
+  --pf-v6-global--FontSize--lg: 18px;
+  --pf-v6-global--FontFamily--sans-serif: 'IBM Plex Sans', sans-serif;
+  --pf-v6-global--FontFamily--heading--sans-serif: 'IBM Plex Sans', sans-serif;
+
+  /* Border radius */
+  --pf-v6-global--BorderRadius--sm: 4px;
+  --pf-v6-global--BorderRadius--md: 8px;
+  --pf-v6-global--BorderRadius--lg: 12px;
+
+  /* Spacing */
+  --pf-v6-global--spacer--md: 16px;
+  --pf-v6-global--spacer--lg: 24px;
+}

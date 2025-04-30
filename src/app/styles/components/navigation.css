@@ -1,0 +1,99 @@
+/* Custom tabs styling - for content switching */
+.pf-custom-styles .pf-v6-c-tabs__item {
+  margin-right: 24px;
+}
+
+.pf-custom-styles .pf-v6-c-tabs__link {
+  font-weight: 500;
+  color: var(--pf-v6-global--Color--300);
+}
+
+/* Active tab state */
+.pf-custom-styles .pf-v6-c-tabs__item.pf-m-current .pf-v6-c-tabs__link {
+  color: var(--pf-v6-global--primary-color--100);
+  border-color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Hover tab state */
+.pf-custom-styles .pf-v6-c-tabs__link:hover::after {
+  background-color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Custom navigation styling - for main app navigation */
+.pf-custom-styles .pf-v6-c-nav {
+  --pf-v6-c-nav__link--hover--BackgroundColor: var(--pf-v6-global--primary-color--light-100);
+  --pf-v6-c-nav__link--active--BackgroundColor: var(--pf-v6-global--primary-color--light-100);
+  --pf-v6-c-nav__link--active--BorderLeftColor: var(--pf-v6-global--primary-color--100);
+}
+
+.pf-custom-styles .pf-v6-c-nav__link {
+  color: var(--pf-v6-global--Color--200);
+  font-weight: 500;
+}
+
+/* Current navigation item */
+.pf-custom-styles .pf-v6-c-nav__link.pf-m-current {
+  --pf-v6-c-nav__link--m-current--BackgroundColor: var(--pf-v6-global--primary-color--light-100);
+  --pf-v6-c-nav__link--m-current--BorderLeftColor: var(--pf-v6-global--primary-color--100);
+  color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Custom page sidebar - for app layout structure */
+.pf-custom-styles .pf-v6-c-page__sidebar {
+  --pf-v6-c-page__sidebar--BackgroundColor: var(--pf-v6-global--BackgroundColor--100);
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom breadcrumb styling - for hierarchical navigation */
+.pf-custom-styles .pf-v6-c-breadcrumb__item-divider {
+  color: var(--pf-v6-global--Color--500);
+}
+
+.pf-custom-styles .pf-v6-c-breadcrumb__item:not(:last-child) .pf-v6-c-breadcrumb__link {
+  color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Custom pagination styling - for page navigation */
+.pf-custom-styles .pf-v6-c-pagination__nav-control .pf-v6-c-button {
+  border-radius: var(--pf-v6-global--BorderRadius--sm);
+}
+
+.pf-custom-styles .pf-v6-c-pagination__nav-page-select {
+  font-weight: 500;
+}
+
+/* Custom tree view styling - for hierarchical data navigation */
+.pf-custom-styles .pf-v6-c-tree-view__node {
+  padding: 8px 0;
+}
+
+.pf-custom-styles .pf-v6-c-tree-view__node-toggle {
+  color: var(--pf-v6-global--primary-color--100);
+}
+
+.pf-custom-styles .pf-v6-c-tree-view__node-check.pf-m-checked {
+  background-color: var(--pf-v6-global--primary-color--100);
+  border-color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Custom masthead styling - for app header */
+.pf-custom-styles .pf-v6-c-masthead {
+  --pf-v6-c-masthead--BackgroundColor: var(--pf-v6-global--primary-color--100);
+  --pf-v6-c-masthead--Color: var(--pf-v6-global--BackgroundColor--100);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom theme switcher styling - for app settings */
+.pf-custom-styles .theme-switcher {
+  color: var(--pf-v6-global--BackgroundColor--100);
+  font-weight: 500;
+}
+
+/* Custom jump links styling - for page section navigation */
+.pf-custom-styles .pf-v6-c-jump-links__link {
+  color: var(--pf-v6-global--Color--200);
+}
+
+.pf-custom-styles .pf-v6-c-jump-links__link.pf-m-current {
+  color: var(--pf-v6-global--primary-color--100);
+}

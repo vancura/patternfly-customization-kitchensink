@@ -1,0 +1,47 @@
+/* Global fixes that apply to both default and styled versions */
+
+/* Make sure scrollbars appear when needed */
+html.pf-custom-styles, body.pf-custom-styles {
+  overflow-y: auto !important;
+  height: 100%;
+}
+
+/* Hide orphaned menus that might appear due to state management issues */
+.pf-v6-c-menu[style*="position: absolute"][style*="z-index: 9999"]:not(:focus-within):not(:hover) {
+  display: none !important;
+}
+
+/* Typography customization */
+.pf-custom-styles {
+  --pf-t--global--FontSize--md: var(--pf-v6-global--FontSize--md);
+  --pf-t--global--FontFamily--sans-serif: var(--pf-v6-global--FontFamily--sans-serif);
+}
+
+/* Heading styles */
+.pf-custom-styles h1,
+.pf-custom-styles h2,
+.pf-custom-styles h3,
+.pf-custom-styles h4,
+.pf-custom-styles h5,
+.pf-custom-styles h6,
+.pf-custom-styles .pf-v6-c-title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--pf-v6-global--Color--100);
+}
+
+.pf-custom-styles .pf-m-h1 {
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+.pf-custom-styles .pf-m-h2 {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+/* Paragraph styles */
+.pf-custom-styles p {
+  line-height: 1.6;
+  color: var(--pf-v6-global--Color--200);
+}

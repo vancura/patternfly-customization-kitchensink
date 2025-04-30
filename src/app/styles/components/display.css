@@ -1,0 +1,77 @@
+/* Custom badge styling - used for counters and status indicators */
+.pf-custom-styles .pf-v6-c-badge {
+  border-radius: 12px;
+  padding: 0 10px;
+  font-weight: 500;
+  background-color: var(--pf-v6-global--primary-color--light-100);
+  color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Custom table styles - for data organization */
+.pf-custom-styles .pf-v6-c-table {
+  --pf-v6-c-table--BorderColor: var(--pf-v6-global--BorderColor--200);
+  --pf-v6-c-table--thead--Color: var(--pf-v6-global--accent-color--100);
+}
+
+/* Custom description list styling - for key-value pairs */
+.pf-custom-styles .pf-v6-c-description-list__term {
+  color: var(--pf-v6-global--Color--200);
+  font-weight: 600;
+}
+
+.pf-custom-styles .pf-v6-c-description-list__description {
+  color: var(--pf-v6-global--Color--300);
+}
+
+/* Label styling - for categorization and tagging */
+.pf-custom-styles .pf-v6-c-label {
+  border-radius: 16px;
+  padding: 4px 12px;
+}
+
+.pf-custom-styles .pf-v6-c-label.pf-m-blue {
+  background-color: var(--pf-v6-global--primary-color--light-100);
+  color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Custom code block styling - for displaying code snippets */
+.pf-custom-styles .pf-v6-c-code-block {
+  border-radius: var(--pf-v6-global--BorderRadius--md);
+  background-color: var(--pf-v6-global--code-block--BackgroundColor);
+}
+
+.pf-custom-styles .pf-v6-c-code-block__code {
+  color: var(--pf-v6-global--code-block--TextColor);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Custom avatar styling - for user profiles */
+.pf-custom-styles .pf-v6-c-avatar {
+  border: 1px solid var(--pf-v6-global--Color--100);
+}
+
+/* Custom empty state styling - for no data conditions */
+.pf-custom-styles .pf-v6-c-empty-state {
+  padding: 40px;
+}
+
+.pf-custom-styles .pf-v6-c-empty-state__icon {
+  color: var(--pf-v6-global--primary-color--100);
+  font-size: 2rem;
+}
+
+.pf-custom-styles .pf-v6-c-empty-state__body {
+  color: var(--pf-v6-global--Color--300);
+}
+
+/* Notification badge styling - for alerts and counts */
+.pf-custom-styles .pf-v6-c-notification-badge {
+  background-color: var(--pf-v6-global--primary-color--100);
+}
+
+/* Custom divider styling - for content separation */
+.pf-custom-styles .pf-v6-c-divider {
+  --pf-v6-c-divider--BackgroundColor: var(--pf-v6-global--BorderColor--300);
+  --pf-v6-c-divider--Height: 1px;
+  margin: 24px 0;
+}

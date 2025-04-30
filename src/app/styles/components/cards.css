@@ -1,0 +1,36 @@
+/* Base card styling with shadow and animation effects */
+.pf-custom-styles .pf-v6-c-card {
+  border-radius: 0;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for interactive cards */
+.pf-custom-styles .pf-v6-c-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Card title typography */
+.pf-custom-styles .pf-v6-c-card__title {
+  color: var(--pf-v6-global--Color--100);
+  font-weight: 600;
+}
+
+/* Card body content styling */
+.pf-custom-styles .pf-v6-c-card__body {
+  color: var(--pf-v6-global--Color--200);
+}
+
+/* Card footer with subtle border */
+.pf-custom-styles .pf-v6-c-card__footer {
+  border-top: 1px solid var(--pf-v6-global--BorderColor--300);
+  padding-top: 16px;
+}
+
+/* Panel styling - more minimal than cards */
+.pf-custom-styles .pf-v6-c-page__main-container {
+  border-radius: 0;
+}
