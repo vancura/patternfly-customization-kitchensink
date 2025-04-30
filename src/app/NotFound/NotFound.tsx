@@ -1,26 +1,34 @@
 import * as React from 'react';
 import { ExclamationTriangleIcon } from '@patternfly/react-icons';
-import { Button, EmptyState, EmptyStateBody, EmptyStateFooter, PageSection } from '@patternfly/react-core';
+import { Button, EmptyState, EmptyStateBody, EmptyStateFooter, EmptyStateVariant, PageSection, Title } from '@patternfly/react-core';
 import { useNavigate } from 'react-router-dom';
 
+/**
+ * NotFound Component
+ *
+ * This component displays a 404 error page when a user navigates to a non-existent route.
+ * It provides a clear error message and a button to navigate back to the home page.
+ */
 const NotFound: React.FunctionComponent = () => {
-  function GoHomeBtn() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    function handleClick() {
-      navigate('/');
-    }
-
-    return <Button onClick={handleClick}>Take me home</Button>;
-  }
+  const handleHomeClick = () => {
+    navigate('/');
+  };
 
   return (
-    <PageSection hasBodyWrapper={false}>
-      <EmptyState titleText="404 Page not found" variant="full" icon={ExclamationTriangleIcon}>
-        <EmptyStateBody>We didn&apos;t find a page that matches the address you navigated to.</EmptyStateBody>
+    <PageSection>
+      <EmptyState variant={EmptyStateVariant.full} icon={ExclamationTriangleIcon}>
+        <Title headingLevel="h1" size="lg">
+          404 Page not found
+        </Title>
+
+        <EmptyStateBody>
+          We couldn&apos;t find a page that matches the address you navigated to.
+        </EmptyStateBody>
 
         <EmptyStateFooter>
-          <GoHomeBtn />
+          <Button variant="primary" onClick={handleHomeClick}>Take me home</Button>
         </EmptyStateFooter>
       </EmptyState>
     </PageSection>

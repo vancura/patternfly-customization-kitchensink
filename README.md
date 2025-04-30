@@ -84,6 +84,10 @@ src/
 └── index.tsx               # Main entry point
 ```
 
+### 404 Page
+
+A custom "Not Found" page that displays when users navigate to non-existent routes.
+
 ## PatternFly customization guide
 
 This project demonstrates various ways to customize the PatternFly design system for your specific needs. Below are the primary customization approaches:
