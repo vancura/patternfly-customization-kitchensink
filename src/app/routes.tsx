@@ -28,14 +28,14 @@ const routes: AppRouteConfig[] = [
     exact: true,
     label: 'Kitchensink',
     path: '/',
-    title: 'PatternFly Seed | Kitchensink',
+    title: 'PatternFly Kitchensink',
   },
   {
     element: <Support />,
     exact: true,
     label: 'Support',
     path: '/support',
-    title: 'PatternFly Seed | Support Page',
+    title: 'PatternFly Kitchensink | Support Page',
   },
 ];
 
