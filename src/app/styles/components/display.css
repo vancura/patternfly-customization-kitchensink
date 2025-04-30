@@ -15,6 +15,11 @@
   color: var(--pf-v6-global--primary-color--100);
 }
 
+.pf-custom-styles .pf-v6-c-badge.pf-m-unread {
+  background-color: var(--pf-v6-global--primary-color--100);
+  color: var(--pf-v6-global--BackgroundColor--100);
+}
+
 /* Custom table styles - for data organization */
 .pf-custom-styles .pf-v6-c-table {
   --pf-v6-c-table--BorderColor: var(--pf-v6-global--BorderColor--200);
