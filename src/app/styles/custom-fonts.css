@@ -1,14 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
 
-.pf-custom-styles {
+/* Global font family declarations */
+:root.pf-custom-styles {
   --pf-v6-global--FontFamily--sans-serif: 'IBM Plex Sans', sans-serif !important;
   --pf-v6-global--FontFamily--heading--sans-serif: 'IBM Plex Sans', sans-serif !important;
-  --pf-v6-t--global--FontFamily--sans-serif: 'IBM Plex Sans', sans-serif !important;
-  --pf-v6-t--global--FontFamily--heading--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-v6-global--FontFamily--monospace: 'IBM Plex Mono', monospace !important;
+  --pf-v6-global--FontSize--md: 16px;
+  --pf-v6-global--FontSize--lg: 18px;
+}
+
+.pf-custom-styles {
+  --pf-global--FontFamily--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-global--FontFamily--heading--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-global--FontFamily--monospace: 'IBM Plex Mono', monospace !important;
+
+  --pf-v5-global--FontFamily--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-v5-global--FontFamily--heading--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-v5-global--FontFamily--monospace: 'IBM Plex Mono', monospace !important;
+
+  --pf-v6-global--FontFamily--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-v6-global--FontFamily--heading--sans-serif: 'IBM Plex Sans', sans-serif !important;
+  --pf-v6-global--FontFamily--monospace: 'IBM Plex Mono', monospace !important;
 
   font-family: 'IBM Plex Sans', sans-serif !important;
 }
 
+/* Element-specific font overrides */
 .pf-custom-styles .pf-v6-c-title,
 .pf-custom-styles .pf-v6-c-button,
 .pf-custom-styles .pf-v6-c-form__label,

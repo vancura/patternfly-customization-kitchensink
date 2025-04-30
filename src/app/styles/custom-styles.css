@@ -529,6 +529,3 @@ html.pf-custom-styles, body.pf-custom-styles {
 .pf-custom-styles .pf-v6-c-notification-badge {
   background-color: var(--pf-t--global--primary-color--100);
 }
-
-/* IBM Plex Mono for code blocks */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
